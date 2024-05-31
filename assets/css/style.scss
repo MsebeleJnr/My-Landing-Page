@@ -1,4 +1,53 @@
----
----
-
 @import "jekyll-theme-slate";
+
+// Custom styles (add any additional styles you need here)
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header, .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.header a, .footer a {
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro-section, .features-section, .about-section, .contact-section {
+  padding: 60px 20px;
+}
+
+.intro-section img.cover-image {
+  width: 100%;
+  height: auto;
+}
+
+.features-section .feature {
+  margin-bottom: 40px;
+}
+
+.features-section .feature img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
