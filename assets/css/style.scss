@@ -82,32 +82,34 @@ body {
   padding: 60px 20px;
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+.features-slider {
+  position: relative;
 }
 
-.features-section .feature {
+.features-slider .feature {
+  display: none;
+}
+
+.features-slider .feature:first-child {
+  display: block;
+}
+
+.slider-nav {
   text-align: center;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #fff;
-}
-
-.features-section .feature img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.features-section .feature h3 {
   margin-top: 20px;
-  font-size: 1.5rem;
 }
 
-.features-section .feature p {
-  font-size: 1rem;
+.slider-nav button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-nav button:hover {
+  background-color: #0066cc;
 }
 
 .about-section {
@@ -128,7 +130,22 @@ body {
   text-align: center;
 }
 
-.contact-section a.btn {
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-section button.btn {
   font-size: 1.2rem;
   margin-top: 20px;
 }
