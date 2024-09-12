@@ -1,166 +1,89 @@
 @import "jekyll-theme-minimal";
 
+/* General Styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f9fc;
-}
-
-header {
-    background-color: #fff;
-    padding: 20px 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #6772e5;
-}
-
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-}
-
-.nav-links a {
-    text-decoration: none;
+    background-color: #f4f4f4; /* Light gray background */
     color: #333;
-    font-weight: 500;
 }
 
-.cta {
-    background-color: #6772e5;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.cta:hover {
-    background-color: #5469d4;
-}
-
-.nav-toggle {
-    display: none; /* Hide by default */
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
+/* Intro Section */
 .intro-section {
+    background: #4A90E2; /* Blue background */
+    color: white;
+    padding: 50px 0;
     text-align: center;
-    padding: 80px 20px;
 }
 
-.intro-section h1 {
-    font-size: 2.5em;
-    margin: 0;
+.btn {
+    background: #fff; /* White button background */
+    color: #4A90E2; /* Blue text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 5px;
 }
 
-.intro-section p {
-    font-size: 1.2em;
-    margin: 20px 0;
-}
-
-.button-group {
-    margin-top: 20px;
-}
-
+/* Services Section */
 .services-section {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.services-section h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
+    padding: 40px 0;
+    background: #fff; /* White background */
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .service {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%; /* Responsive columns */
+    margin: 20px;
+    text-align: center;
 }
 
+.service img {
+    max-width: 100%;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* About Section */
 .about-section {
-    padding: 60px 20px;
+    padding: 40px 0;
+    background: #e9ecef; /* Light gray background */
 }
 
-.about-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
+/* Contact Section */
 .contact-section {
-    padding: 60px 20px;
+    padding: 40px 0;
+    background: #fff; /* White background */
 }
 
-.contact-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-#contactForm {
+form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
-#contactForm input,
-#contactForm textarea {
+form input,
+form textarea {
+    margin: 10px 0;
     padding: 10px;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1em;
+    border: 1px solid #ccc; /* Light border */
 }
 
-#contactForm button {
-    background-color: #6772e5;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contactForm button:hover {
-    background-color: #5469d4;
-}
-
+/* Footer */
 footer {
+    background: #4A90E2; /* Blue background */
+    color: white;
     text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Mobile Navigation Styles */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide links by default */
-        flex-direction: column; /* Stack links vertically */
-    }
-    .nav-links.active {
-        display: flex; /* Show links when active */
-    }
-    .nav-toggle {
-        display: block; /* Show toggle button */
-    }
+    padding: 20px 0;
 }
