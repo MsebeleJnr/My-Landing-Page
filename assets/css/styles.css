@@ -3,72 +3,120 @@
 
 /* Custom styles for your portfolio */
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa; /* Light background */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
-    margin-bottom: 30px; /* Space below header */
+body {
+    background: #001; /* Dark background color for the page */
+    color: #fff; /* White text color for better contrast */
 }
 
-#hero {
-    background-color: #343a40; /* Dark background for hero section */
+.intro {
+    position: relative;
+    text-align: center;
     color: white;
-    padding: 60px 0; /* Padding for hero section */
+    padding: 60px 20px;
 }
 
-#hero img {
-    width: 150px; /* Control the size of the image */
-    height: 150px; /* Control the size of the image */
-    border-radius: 50%; /* Circle image */
-    margin-bottom: 20px; /* Space below image */
+.cover-image {
+    height: 60vh;
+    overflow: hidden;
 }
 
-section {
-    padding: 40px 0; /* General padding for sections */
+.cover-img {
+    width: 100%;
+    height: auto;
 }
 
-h2 {
-    font-size: 2rem; /* Size of section headings */
-    margin-bottom: 20px; /* Space below headings */
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.card {
-    transition: transform 0.3s; /* Animation for card hover effect */
+.intro-text h1 {
+    font-size: 2.5em;
 }
 
-.card:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+.intro-text p {
+    font-size: 1.2em;
 }
 
-footer {
-    background-color: #343a40; /* Dark background for footer */
-    color: white; /* White text in footer */
-    padding: 15px 0; /* Padding for footer */
+.navbar {
+    margin: 20px 0;
 }
 
-.btn-primary {
-    background-color: #007bff; /* Primary button color */
-    border: none; /* No border */
+.navbar ul {
+    list-style: none;
+    padding: 0;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    #hero {
-        padding: 40px 0; /* Reduced padding for mobile */
-    }
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
 
-    h1 {
-        font-size: 1.5rem; /* Smaller font size for mobile */
-    }
+.btn {
+    background: #2ecc71; /* Green button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
 
-    h2 {
-        font-size: 1.5rem; /* Smaller section heading for mobile */
-    }
+.btn:hover {
+    background: #27ae60; /* Darker green on hover */
+}
+
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background: #333; /* Dark background for feature section */
+    color: #fff;
+}
+
+.feature {
+    margin: 20px 0;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+}
+
+.about, .contact {
+    padding: 50px 20px;
+    background: #222; /* Slightly lighter background for sections */
+    color: #fff;
+    margin: 20px 0;
+}
+
+.about h3, .contact h2 {
+    margin-top: 30px;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #2ecc71; /* Green color for links */
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
