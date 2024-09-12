@@ -1,5 +1,21 @@
 title: Iron-Kong Web Development
 description: Crafting exceptional web solutions tailored to your needs.
-show_downloads: false
-google_analytics:
-theme: jekyll-theme-minimal
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://Ironkong.com" # the base hostname & protocol for your site
+
+theme: minimal-mistakes-jekyll
+
+# Author
+author:
+  name: Gift Msebele
+  email: msebelegift@gmail.com
+
+# Social Media Links
+social:
+  twitter: MsebeleJnr
+  github: MsebeleJnr
+  linkedin: Gift Msebele
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
