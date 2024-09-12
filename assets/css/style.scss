@@ -1,151 +1,89 @@
 @import "jekyll-theme-minimal";
 
-// Base styles
+/* General Styles */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.6;
-  color: #fff;
-  background-color: #333; /* Charcoal grey background */
-  margin: 0;
-  padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-.header, .footer {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.header a, .footer a {
-  color: #1e90ff;
-  text-decoration: none;
-}
-
-.header a:hover, .footer a:hover {
-  text-decoration: underline;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-
-.header h1, .header h2 {
-  margin: 0;
-}
-
-.main-content {
-  padding-top: 100px;
-}
-
+/* Intro Section */
 .intro-section {
-  background: url('/images/cover-image.jpg') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.intro-section h2 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.intro-section p {
-  font-size: 1.2rem;
+    background: #4A90E2; /* Blue background */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
 }
 
 .btn {
-  background-color: #1e90ff;
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 20px;
+    background: #fff; /* White button background */
+    color: #4A90E2; /* Blue text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 5px;
 }
 
-.btn:hover {
-  background-color: #0066cc;
+/* Services Section */
+.services-section {
+    padding: 40px 0;
+    background: #fff; /* White background */
 }
 
-.features-section {
-  background-color: #444; /* Darker grey for sections */
-  padding: 60px 20px;
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.features-slider {
-  position: relative;
+.service {
+    flex: 1 1 30%; /* Responsive columns */
+    margin: 20px;
+    text-align: center;
 }
 
-.features-slider .feature {
-  display: none;
+.service img {
+    max-width: 100%;
+    border-radius: 5px; /* Rounded corners */
 }
 
-.features-slider .feature:first-child {
-  display: block;
-}
-
-.slider-nav {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.slider-nav button {
-  background-color: #1e90ff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.slider-nav button:hover {
-  background-color: #0066cc;
-}
-
+/* About Section */
 .about-section {
-  background-color: #555; /* Even darker grey */
-  padding: 60px 20px;
-  text-align: center;
+    padding: 40px 0;
+    background: #e9ecef; /* Light gray background */
 }
 
-.about-section p {
-  max-width: 800px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-}
-
+/* Contact Section */
 .contact-section {
-  background-color: #444;
-  padding: 60px 20px;
-  text-align: center;
+    padding: 40px 0;
+    background: #fff; /* White background */
 }
 
-.contact-section form {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.contact-section input,
-.contact-section textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+form input,
+form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light border */
 }
 
-.contact-section button.btn {
-  font-size: 1.2rem;
-  margin-top: 20px;
+/* Footer */
+footer {
+    background: #4A90E2; /* Blue background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
