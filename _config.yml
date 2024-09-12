@@ -1,5 +1,5 @@
 title: Iron-Kong Web Development
 description: Crafting exceptional web solutions tailored to your needs.
-show_downloads: true
+show_downloads: false
 google_analytics:
-theme: jekyll-theme-minima
+theme: jekyll-theme-minimal
