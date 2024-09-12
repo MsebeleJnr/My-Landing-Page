@@ -3,20 +3,6 @@ layout: default
 title: Iron-Kong Web Development
 ---
 
-<header>
-  <nav>
-    <div class="logo">Iron-Kong</div>
-    <button class="nav-toggle">☰</button>
-    <ul class="nav-links">
-      <li><a href="#intro">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-    <a href="#" class="cta">Get Started</a>
-  </nav>
-</header>
-
 <section id="intro" class="intro-section">
   <div class="container">
     <h1>Welcome to Iron-Kong Web Development</h1>
@@ -34,17 +20,17 @@ title: Iron-Kong Web Development
     <h2>Our Services</h2>
     <div class="services-grid">
       <div class="service">
-        <img src="{{ '/images/feature-1.jpg' alt="Web Development">
+        <img src="{{ '/images/feature-1.jpg' | relative_url }}" alt="Web Development">
         <h3>Web Development</h3>
         <p>We specialize in crafting responsive and user-friendly websites using the latest technologies and best practices.</p>
       </div>
       <div class="service">
-        <img src="{{ '/images/feature-2.jpg' alt="E-commerce Solutions">
+        <img src="{{ '/images/feature-2.jpg' | relative_url }}" alt="E-commerce Solutions">
         <h3>E-commerce Solutions</h3>
         <p>From custom online stores to integration with payment gateways, we create seamless e-commerce experiences.</p>
       </div>
       <div class="service">
-        <img src="{{ '/images/feature-3.jpg' alt="Digital Marketing">
+        <img src="{{ '/images/feature-3.jpg' | relative_url }}" alt="Digital Marketing">
         <h3>Digital Marketing</h3>
         <p>Drive traffic and boost conversions with our comprehensive digital marketing strategies tailored to your business goals.</p>
       </div>
