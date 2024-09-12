@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
     color: #6772e5;
 }
@@ -49,16 +49,12 @@ nav {
     background-color: #5469d4;
 }
 
-.signin {
-    color: #6772e5;
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: 2px solid #6772e5;
-    transition: background-color 0.3s;
-}
-
-.signin:hover {
-    background-color: #f1f1f1;
+.nav-toggle {
+    display: none; /* Hide by default */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
 }
 
 .intro-section {
@@ -153,4 +149,18 @@ footer {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Navigation Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Stack links vertically */
+    }
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+    .nav-toggle {
+        display: block; /* Show toggle button */
+    }
 }
