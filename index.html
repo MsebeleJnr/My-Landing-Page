@@ -1,75 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio - Gift Msebele</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Stack Developer Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    <!-- Intro Section -->
-    <header class="intro">
-        <div class="cover-image">
-            <img src="cover-image.jpg" alt="Cover Image" class="cover-img">
-        </div>
-        <div class="intro-text">
-            <h1>Gift Msebele </h1>
-            <p>Software Engineer - Full Stack</p>
-            <p>A creative problem-solver specializing in web development and data analysis.</p>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn">Hire Me</a>
-        </div>
-    </header>
-
-    <!-- Feature Section -->
-    <section id="features" class="features">
-        <h2>SERVICES</h2>
-        <div class="feature">
-            <img src="feature1.jpg" alt="Feature 1">
-            <h3>Web development</h3>
-            <p>I can provide clean codes and pixel perfect web designs. I also make the website more and more interactive and responsive. Every website I develop is built with two primary goals: Firstly, I program it to work across all devices. Secondly, I design it to be fast and interactive as possible.</p>
-        </div>
-        <div class="feature">
-            <img src="feature2.jpg" alt="Feature 2">
-            <h3>Software Engineering</h3>
-            <p>I specialize in crafting dynamic, cutting-edge Single-Page Applications (SPAs) using the latest technologies. With a strong focus on React, NextJS, and Typescript, I create engaging web experiences that are not only visually stunning but also highly functional, responsive and interactive with optimal performance.</p>
-        </div>
-        <div class="feature">
-            <img src="feature3.jpg" alt="Feature 3">
-            <h3>Data Analysis</h3>
-            <p>I'm a seasoned data analyst with a knack for turning complex data into actionable insights. With proficiency in Excel, Python, SQL, and Tableau, I've led projects that resulted in significant cost savings and improved data accuracy. I thrive in collaborative environments and am eager to contribute to your team's success. Looking forward to discussing how my skills can benefit your organization.</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a Software Engineer - Full Stack, a programming enthusiast with 2 years of working experience in Backend and Frontend development and an open-source contributor eager to contribute to team success through hard work, reliability, innovative ideas, and excellent organizational skills. I'm a skilled software engineer with a strong focus on JavaScript, Node.js, React.js, and Next.js. I have a proven track record of developing robust and scalable web applications, leveraging these technologies to deliver exceptional user experiences.</p>
-        <p>Inspired by the impact technology has on everyday life, I strive to create user-friendly applications that solve real-world problems. This portfolio is a reflection of my journey in software development, showcasing my skills and the projects I've been involved in.</p>
-        <h3>Connect with Me</h3>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/your-github" target="_blank">GitHub</a></li>
-            <li><a href="https://twitter.com/your-twitter" target="_blank">Twitter</a></li>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">MSEBELEJNR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
-        <h3>GitHub Repository</h3>
-        <a href="https://github.com/your-repo" target="_blank">View Project Repository</a>
-    </section>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>Email: messagemsebelegift@gmail.com</p>
-        <p>Phone: +27660977975</p>
-        <p>Location: Johannesburg, South Africa</p>
-    </section>
+  <section id="hero" class="jumbotron text-center">
+    <div class="container">
+      <img class="rounded" src="https://avatars.githubusercontent.com/u/97896663?v=4" alt="MyPhoto">
+      <h1 class="display-4">Gift Msebele</h1>
+      <h2 class="lead">Full Stack Developer</h2>
+      <a href="#contact" class="btn btn-primary btn-lg">Hire Me</a>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p>
+        Hi, I'm Gift Msebele, a passionate Full Stack Developer with experience in building web applications. I have a strong foundation in front-end and back-end technologies, including HTML, CSS, JavaScript, Node.js, Php, C, and databases like MySQL and MongoDB.
+      </p>
+      <p>
+        I love solving problems and creating efficient, scalable solutions. I'm a quick learner and enjoy keeping up with the latest trends in web development. My goal is to deliver high-quality software that meets the client's requirements and provides a great user experience.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Portfolio Website</h3>
+              <p class="card-text">Just Like this one.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Mat Online</h3>
+              <p class="card-text">Coming Soon.</p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project sections as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Contact Me</h2>
+      <p>If you have any questions or would like to discuss a potential project, feel free to get in touch with me. I'm available for freelance work and open to new opportunities.</p>
+      <a href="mailto:msebelegift@gmail.com" class="btn btn-primary">Email Me</a>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Msebele-Jnr. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
